@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Task 3</title>
+    <script src="task3.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="task3.css">
+</head>
+
+<body onload="options()">
+    <h1>Festival Sign Up Page</h1>
+    <h3>How Much?</h3>
+    <p id="pr1">We believe that money is but a tool and has no intrinsic value. We therefore recommend that you do not worry about how much it will all cost. Rather, the right question to ask is this: am I ready for a life-cchanging experience?</p>
+    <h3>What do I need to Know?</h3>
+    <p id="pr2">We believe that the best experiences inlolve one stepping into the unknown. Therefore, we do not reveal the itinerary until the day of the festival. We hope to give you a healthy mix of curiosity, wonder and anticipation</p>
+    <form>
+        <label for="name">Your First Name</label>
+        <input type="text" name="name" id="name">
+        <label for="surname">Your Last Name</label>
+        <input type="text" name="surname" id="surname">
+        <label for="address">Your Email Address</label>
+        <input type="email" name="address" id="address">
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    <h3>Curiosities:</h3>
+    <img src="images/church.jpg" width="150" alt="quote">
+    <img src="images/birdie.jpg" width="150" alt="seagull">
+    <img src="images/end.png" width="150" alt="seagull">
+    <br>
+    <br>
+    <button id="counter-button" onclick="counter()">Counter</button>
+    <label for="counter-button" id="count"></label>
+    <h3>The Currency Converter</h3>
+    <input type="number" name="rand-entry" id="rand-entry">
+    <label for="rand-entry">Rand</label>
+    <br>
+    <br>
+    <button onclick="converter()">Convert</button>
+    <br>
+    <p id="dollar"></p>
+    <br>
+    <p id="euro"></p>
+    <br>
+    <p id="pound"></p>
+    <br>
+    <select id="ddmenu" name="ddmenu"></select>
+    <h2 id="calc-title">Basic Calculator</h2>
+    <div id="calc-grid">
+        <div id="space">
+            <div data-prev-operand class="prev-operand"></div>
+            <div data-curr-operand class="curr-operand"></div>
+        </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
+    </div>
+</body>
+
+</html>
